@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Write",
+      "Edit",
+      "Bash(python scripts/build.py:*)",
+      "Bash(python scripts/check_resume.py:*)"
+    ]
+  }
+}

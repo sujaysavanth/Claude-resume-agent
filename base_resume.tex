@@ -1,0 +1,89 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage[left=0.45in,right=0.45in,top=0.2in,bottom=0.2in]{geometry}
+\usepackage{mathptmx}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{cmap}
+\usepackage[T1]{fontenc}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\hypersetup{hidelinks}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\sloppy
+\titleformat{\section}{\bfseries\normalsize}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{4pt}{2pt}
+\setlist[itemize]{leftmargin=1em, topsep=0pt, itemsep=0pt, parsep=0pt, label={\textbullet}}
+\newcommand{\resumeheading}[4]{\textbf{#1} \hfill {\small #2} \\[-1pt] \textit{\small #3} \hfill {\small\textit{#4}}}
+\newcommand{\projectheading}[3]{\textbf{#1} \hfill {\small #3} \\[-1pt] \textit{\small #2}}
+
+\begin{document}
+
+\begin{center}
+{\Large \textbf{Sujay Govindappa Rajashekar}} \\[2pt]
+{\small Tempe, AZ \textbar{} sgovin42@asu.edu \textbar{} (480) 242-2854 \textbar{} github.com/sujaysavanth \textbar{} linkedin.com/in/sujaysavanth \textbar{} \href{https://portfolio-sujay11.vercel.app/}{Portfolio}}
+\end{center}
+
+\section{Education}
+\textbf{Arizona State University} \hfill Tempe, AZ \\
+M.S., Data Science \& Analytics Engineering \hfill Jan. 2025 -- Dec. 2026 \\
+GPA: 4.0/4.0 \\
+{\footnotesize Courses: Software Engineering, Data Structures \& Algorithms, Data Processing at Scale (Distributed Databases)} \\[3pt]
+\textbf{JSS Science and Technology University} \hfill Mysore, India \\
+B.E., Electrical and Electronics Engineering \hfill Aug. 2016 -- Sep. 2020 \\
+GPA: 3.6/4.0
+
+\section{Technical Skills}
+\begin{itemize}
+\item \textbf{Languages:} Java, Python (4+ yrs), SQL, TypeScript, JavaScript, Bash
+\item \textbf{Testing \& Quality:} pytest, Test Automation, Unit and Integration Testing, Regression Testing, Code Review
+\item \textbf{DevOps \& Cloud:} CI/CD, Jenkins, GitHub Actions, Docker, Kubernetes, AWS (S3, EC2, RDS), GCP (Cloud Run)
+\item \textbf{Backend \& Security:} Spring Boot, FastAPI, REST APIs, Microservices, OAuth 2.0, JWT, Redis, PostgreSQL
+\item \textbf{Data \& Tools:} Apache Spark, Kafka, Airflow, dbt, BigQuery, Git, Claude Code, Cursor
+\end{itemize}
+
+\section{Experience}
+\resumeheading{Arizona State University}{Tempe, AZ}{Lab Aide, Student Worker}{Jan. 2026 -- Present}
+\begin{itemize}
+\item Mentor students on \textbf{Java}, \textbf{Python}, testing, and debugging, converting code review practice into checklists that students apply without assistance across coursework.
+\item Analyze SAILS accessibility survey free text with \textbf{TextBlob} sentiment scoring and \textbf{spaCy} noun-phrase extraction, delivering an executive summary of ranked themes to non-technical stakeholders under a same-day deadline.
+\end{itemize}
+\vspace{2pt}
+\resumeheading{Tredence Inc.}{Bangalore, India}{Software Engineer}{Aug. 2024 -- Dec. 2024}
+\begin{itemize}
+\item Engineered \textbf{Python} ingestion and transformation services on \textbf{GCP}, deploying them on \textbf{Cloud Run} with automated scaling that cut compute cost by \textbf{22\%}.
+\item Enriched datasets feeding prediction pipelines on \textbf{Vertex AI} with automated schema and data validation checks, partnering with the data infrastructure team to debug pipeline failures and cutting integration errors by \textbf{25\%} and improving production uptime.
+\item Partnered with data scientists and product managers to define requirements as pipeline contracts and shared metric definitions, raising downstream throughput by \textbf{25\%}.
+\item Launched \textbf{Power BI} and \textbf{React.js} dashboards that let operations managers trace rejection patterns, improving warehouse efficiency by \textbf{15\%}.
+\end{itemize}
+\vspace{2pt}
+\textbf{Accenture} \hfill {\small Bangalore, India} \\[-1pt]
+\textit{\small Software Engineer} \hfill {\small\textit{Feb. 2023 -- Aug. 2024}} \\[-1pt]
+\textit{\small Associate Software Engineer} \hfill {\small\textit{Feb. 2021 -- Feb. 2023}}
+\begin{itemize}
+\item Owned \textbf{CI/CD} release pipelines in \textbf{Jenkins} and \textbf{GitHub Actions} with automated build, test, and deploy stages, cutting release cycles by \textbf{30\%}.
+\item Developed \textbf{Java}, \textbf{Spring Boot}, and \textbf{Python} backend services with \textbf{SQL} data layers for a banking platform serving \textbf{50K+} monthly users, cutting request latency by \textbf{35\%} through query refactoring and index tuning.
+\item Scaled distributed microservices with \textbf{Redis} caching and load balancing, raising \textbf{API} throughput by \textbf{35\%} under peak load.
+\item Authored runbooks and led design reviews on test-driven development and version control, shortening new engineer onboarding by \textbf{40\%}.
+\end{itemize}
+
+\section{Project Experience}
+\projectheading{Quantitative Finance Trading Simulator}{Python, FastAPI, PostgreSQL, XGBoost, SHAP, Docker, GCP}{Mar. 2025 -- Aug. 2025}
+\begin{itemize}
+\item Validated pipeline and service correctness with \textbf{pytest} suites and structured logging, giving every stage a traceable failure point for debugging bad runs.
+\item Served model inference through a containerized \textbf{FastAPI} microservice on \textbf{GCP}, cutting backtest runtime by \textbf{25\%} with asynchronous execution and indexed retrieval.
+\item Implemented modular \textbf{Python} ETL pipelines that ingest, clean, and load financial time-series data into indexed \textbf{PostgreSQL} tables, feeding \textbf{XGBoost} training and inference from one shared source.
+\end{itemize}
+\vspace{2pt}
+\projectheading{NYC TLC Trip Data Pipeline}{Apache Spark, Scala, Kafka, Airflow, Iceberg, dbt, BigQuery, Docker}{Sep. 2025 -- Dec. 2025}
+\begin{itemize}
+\item Processed \textbf{1.4B+} trip records through a medallion architecture on \textbf{Apache Spark} (\textbf{Scala}) and \textbf{Iceberg}, orchestrating batch and streaming loads with \textbf{Airflow} and \textbf{Kafka}.
+\item Modeled curated marts in \textbf{dbt} on \textbf{BigQuery} with column-level tests that block bad loads before they reach consumers, catching data defects at build time.
+\item Containerized the \textbf{Spark}, \textbf{Kafka}, and \textbf{Airflow} services with \textbf{Docker}, giving a reproducible environment for full pipeline reruns.
+\end{itemize}
+
+\end{document}

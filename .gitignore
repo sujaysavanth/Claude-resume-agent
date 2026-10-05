@@ -1,0 +1,17 @@
+# secrets / login sessions
+rw_auth.json
+.chrome-profile/
+
+# personal data
+output/
+applications/
+jds/
+memory/
+base_resume.pdf
+
+# python / latex junk
+__pycache__/
+*.aux
+*.log
+*.out
+.venv/
